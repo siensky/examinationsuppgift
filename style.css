@@ -24,6 +24,7 @@ a {
 }
 
 #logo {
+    margin-left: 30px;
     font-size: 2rem;
     color: rgb(124, 29, 29);
 }
@@ -36,7 +37,10 @@ a {
     align-items: center;
     padding: 0 30px;
     width: 100%;
-    position:fixed;
+    position: fixed;
+    
+    
+  
 }
 
 
@@ -63,21 +67,36 @@ a {
     text-align: center;
     justify-content: space-between;
     transition: 0.5s;
+   
+   
 }
+
+
 
 .nav-menu.active {
  
    right: 0;
+   
+   
+ 
 
 }
 
 .nav-item {
     margin: 16px 0;
 }
+.nav-link {
+    transition: 0.5s ease;
+}
+
+.nav-link:hover {
+    color: rgb(163, 55, 55);
+}
 
 
 
 #wines-list {
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -113,13 +132,7 @@ a {
 
     }
 
-    .nav-link {
-        transition: 0.5s ease;
-    }
-
-    .nav-link:hover {
-        color: rgb(0, 0, 0);
-    }
+    
 
     .hamburger {
         display: none;
