@@ -4,7 +4,7 @@ const WINES_URL = "https://api.sampleapis.com/wines/reds"
 const winesList = document.getElementById("wines-list")
 
 const getWines = async () => {
-    
+
     const response = await fetch(WINES_URL)
     const paresdWines = await response.json()
 
@@ -24,11 +24,11 @@ const getWines = async () => {
         wineImg.src = wine.image
         wineImg.alt = `Image of ${wineName} wine`
 
+        wineDiv.classList.add("wines-column")
 
 
-       
 
-        
+
         wineDiv.appendChild(wineImg)
         wineDiv.appendChild(wineName)
         wineDiv.appendChild(winery)
@@ -38,7 +38,7 @@ const getWines = async () => {
 
     }
 
-     
+
 }
 
 
