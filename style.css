@@ -1,9 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     background-color: aliceblue;
 }
+
+
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(108, 108, 108);
+    text-decoration: none;
+}
+
+#logo {
+    font-size: 2rem;
+    color: rgb(124, 29, 29);
+}
+
+.navbar {
+    background-color: antiquewhite;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
+    position:fixed;
+}
+
+
+
+.bar {
+   
+   width: 25px;
+   height: 3px;
+   margin: 5px auto;
+   transition: all 0.5s ease-in-out;
+   background-color:  rgb(108, 108, 108);
+   display: block;
+}
+
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    background-color: rgb(248, 237, 223);
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.nav-menu.active {
+ 
+   right: 0;
+
+}
+
+.nav-item {
+    margin: 16px 0;
+}
+
+
 
 #wines-list {
     display: flex;
@@ -27,6 +99,32 @@ body {
 
 @media screen and (min-width: 450px) {
 
+
+    .nav-menu {
+        align-items: center;
+        justify-content: flex-end;
+        gap: 50px;
+        right: 0;
+        top: 0;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        width: auto;
+
+    }
+
+    .nav-link {
+        transition: 0.5s ease;
+    }
+
+    .nav-link:hover {
+        color: rgb(0, 0, 0);
+    }
+
+    .hamburger {
+        display: none;
+    }
+
     #wines-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -44,6 +142,9 @@ body {
         width: 150px;
 
     }
+
+
+
 }
 
 

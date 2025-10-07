@@ -3,6 +3,14 @@ const WINES_URL = "https://api.sampleapis.com/wines/reds"
 
 const winesList = document.getElementById("wines-list")
 
+const hamburger = document.querySelector(".hamburger")
+const navMenu = document.querySelector(".nav-menu")
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active")
+    navMenu.classList.toggle("active")
+})
+
 const getWines = async () => {
 
     const response = await fetch(WINES_URL)
@@ -18,7 +26,7 @@ const getWines = async () => {
         winery.textContent = wine.winery
 
         const rating = document.createElement("p")
-        rating.textContent = `rating: ${wine.rating.average}/5 (${wine.rating.reviews})`
+        rating.textContent = `Rating: ${wine.rating.average}/5 (${wine.rating.reviews})`
 
         const wineImg = document.createElement("img")
         wineImg.src = wine.image
