@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+#wines-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+}
+
+.wines-column {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(211, 208, 204);
+    padding: 10px;
+    text-align: center;
+    font-size: 16pt;
+}
+
+.wines-column img {
+    width: 75%;
+}
+
+@media screen and (min-width: 450px) {
+
+    #wines-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .wines-column {
+        justify-content: center;
+    }
+
+    .wines-column img {
+        width: 150px;
+
+    }
+}
+
+
+/* börja med mediaqueries */
