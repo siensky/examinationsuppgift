@@ -12,6 +12,22 @@ body {
     background-color: aliceblue;
 }
 
+main{
+    margin-top: 80px;
+}
+
+.skip { 
+    position: absolute;
+    top: -40px ;
+    
+    z-index: 100;
+
+}
+
+.skip:focus {
+    top: 0;
+    left: 300px ;
+}
 
 
 li {
@@ -67,6 +83,7 @@ a {
     text-align: center;
     justify-content: space-between;
     transition: 0.5s;
+    margin-right: 50px;
    
    
 }
@@ -115,6 +132,24 @@ a {
 .wines-column img {
     width: 75%;
 }
+
+.contact-about {
+    margin: 100px;
+    background-color: antiquewhite;
+    padding: 100px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-about-title {
+    
+    text-align: center;
+    color: rgb(163, 55, 55);
+}
+
+
 
 @media screen and (min-width: 450px) {
 
