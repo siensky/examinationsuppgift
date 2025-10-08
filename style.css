@@ -12,21 +12,21 @@ body {
     background-color: aliceblue;
 }
 
-main{
+main {
     margin-top: 80px;
 }
 
-.skip { 
+.skip {
     position: absolute;
-    top: -40px ;
-    
+    top: -40px;
+
     z-index: 100;
 
 }
 
 .skip:focus {
     top: 0;
-    left: 300px ;
+    left: 300px;
 }
 
 
@@ -54,21 +54,21 @@ a {
     padding: 0 30px;
     width: 100%;
     position: fixed;
-    
-    
-  
+
+
+
 }
 
 
 
 .bar {
-   
-   width: 25px;
-   height: 3px;
-   margin: 5px auto;
-   transition: all 0.5s ease-in-out;
-   background-color:  rgb(108, 108, 108);
-   display: block;
+
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(108, 108, 108);
+    display: block;
 }
 
 
@@ -84,24 +84,27 @@ a {
     justify-content: space-between;
     transition: 0.5s;
     margin-right: 50px;
-   
-   
+
+
+
+
 }
 
 
 
 .nav-menu.active {
- 
-   right: 0;
-   
-   
- 
+
+    right: 0;
+
+
+
 
 }
 
 .nav-item {
     margin: 16px 0;
 }
+
 .nav-link {
     transition: 0.5s ease;
 }
@@ -127,10 +130,17 @@ a {
     padding: 10px;
     text-align: center;
     font-size: 16pt;
+    max-width: 300px;
+    height: 400px;
+
 }
 
 .wines-column img {
-    width: 75%;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+
+
 }
 
 .contact-about {
@@ -144,7 +154,7 @@ a {
 }
 
 .contact-about-title {
-    
+
     text-align: center;
     color: rgb(163, 55, 55);
 }
@@ -167,7 +177,7 @@ a {
 
     }
 
-    
+
 
     .hamburger {
         display: none;
