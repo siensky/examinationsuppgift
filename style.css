@@ -10,23 +10,23 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: aliceblue;
+
 }
 
-main{
+main {
     margin-top: 80px;
+    width: 100%;
 }
 
-.skip { 
+.skip {
     position: absolute;
-    top: -40px ;
-    
+    top: -40px;
     z-index: 100;
-
 }
 
 .skip:focus {
     top: 0;
-    left: 300px ;
+    left: 300px;
 }
 
 
@@ -40,7 +40,8 @@ a {
 }
 
 #logo {
-    margin-left: 30px;
+    margin-right: 20px;
+    margin-left: 50px;
     font-size: 2rem;
     color: rgb(124, 29, 29);
 }
@@ -54,23 +55,19 @@ a {
     padding: 0 30px;
     width: 100%;
     position: fixed;
+    right: 0;
     
-    
-  
 }
-
-
 
 .bar {
-   
-   width: 25px;
-   height: 3px;
-   margin: 5px auto;
-   transition: all 0.5s ease-in-out;
-   background-color:  rgb(108, 108, 108);
-   display: block;
-}
 
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(108, 108, 108);
+    display: block;
+}
 
 .nav-menu {
     display: flex;
@@ -83,25 +80,23 @@ a {
     text-align: center;
     justify-content: space-between;
     transition: 0.5s;
-    margin-right: 50px;
+    left: 0;
+    
+    
    
    
 }
 
-
-
 .nav-menu.active {
  
    right: 0;
-   
-   
  
-
 }
 
 .nav-item {
     margin: 16px 0;
 }
+
 .nav-link {
     transition: 0.5s ease;
 }
@@ -110,12 +105,46 @@ a {
     color: rgb(163, 55, 55);
 }
 
+/* hero section */
 
+.hero {
+    background-color: rgb(114, 29, 25);
+    width: 100%;
+    color: rgb(189, 164, 164);
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    background-color: #a19090;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
 
 #wines-list {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
     width: 90%;
 }
@@ -127,10 +156,14 @@ a {
     padding: 10px;
     text-align: center;
     font-size: 16pt;
+    max-width: 300px;
+    height: 400px;
 }
 
 .wines-column img {
-    width: 75%;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
 }
 
 .contact-about {
@@ -140,11 +173,13 @@ a {
     border-radius: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 
 .contact-about-title {
-    
+
     text-align: center;
     color: rgb(163, 55, 55);
 }
@@ -152,7 +187,6 @@ a {
 
 
 @media screen and (min-width: 450px) {
-
 
     .nav-menu {
         align-items: center;
@@ -164,10 +198,7 @@ a {
         position: static;
         background-color: transparent;
         width: auto;
-
     }
-
-    
 
     .hamburger {
         display: none;
@@ -179,7 +210,6 @@ a {
         padding: 10px;
         justify-content: center;
         align-items: center;
-
     }
 
     .wines-column {
@@ -188,12 +218,5 @@ a {
 
     .wines-column img {
         width: 150px;
-
     }
-
-
-
 }
-
-
-/* börja med mediaqueries */
