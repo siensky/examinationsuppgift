@@ -55,6 +55,8 @@ a {
     padding: 0 30px;
     width: 100%;
     position: fixed;
+    right: 0;
+    
 }
 
 .bar {
@@ -78,6 +80,8 @@ a {
     text-align: center;
     justify-content: space-between;
     transition: 0.5s;
+    left: 0;
+    
     
    
    
