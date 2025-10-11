@@ -40,22 +40,22 @@ a {
 }
 
 #logo {
-    margin-right: 20px;
-    margin-left: 50px;
+   
     font-size: 2rem;
     color: rgb(124, 29, 29);
 }
 
 .navbar {
+    position: fixed;
     background-color: antiquewhite;
     min-height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 30px;
     width: 100%;
-    position: fixed;
     right: 0;
+    left: 0;
+    z-index: 1000;
 
 }
 
