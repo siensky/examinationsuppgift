@@ -11,15 +11,14 @@ const navMenu = document.querySelector(".nav-menu")
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active")
     navMenu.classList.toggle("active")
-    console.log('hej')
 })
 
 const getWines = async () => {
 
     const response = await fetch(WINES_URL)
-    const paresdWines = await response.json()
+    const paresedWines = await response.json()
 
-    for (const wine of paresdWines) {
+    for (const wine of paresedWines) {
         const wineDiv = document.createElement("div")
 
         const wineName = document.createElement("h3")
@@ -33,7 +32,7 @@ const getWines = async () => {
 
         const wineImg = document.createElement("img")
         wineImg.src = wine.image
-        wineImg.alt = `Image of ${wineName} wine`
+        wineImg.alt = `Image of ${wine.wine} wine`
 
         wineDiv.classList.add("wines-column")
 
