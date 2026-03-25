@@ -11,7 +11,6 @@ The webpage includes:
 
 Our project has been used and testet by cloning the repo and opening the index.html file in a web browser. We have tested the website in different sizes to assure that it is responsive. The JavaScript functions have also been testet in the browsers console. 
 
-
 Authors:
 Alexander Yasso
 Sienna Lansky
